@@ -1,23 +1,15 @@
-# Esplora Block Explorer
+# Lotuscoin Block Explorer
 
-[![build status](https://api.travis-ci.org/Blockstream/esplora.svg)](https://travis-ci.org/Blockstream/esplora)
-[![docker release](https://img.shields.io/docker/pulls/blockstream/esplora.svg)](https://hub.docker.com/r/blockstream/esplora)
-[![MIT license](https://img.shields.io/github/license/blockstream/esplora.svg)](https://github.com/blockstream/esplora/blob/master/LICENSE)
-[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![IRC](https://img.shields.io/badge/chat-on%20freenode-brightgreen.svg)](https://webchat.freenode.net/?channels=bitcoin-explorers)
-
-Block explorer web interface based on the [esplora-electrs](https://github.com/Blockstream/electrs) HTTP API.
+Block explorer web interface based on the [Lotuscoin-electrs](https://github.com/Pamenarti/electronx-lotuscoin) HTTP API.
 
 Written as a single-page app in a reactive and functional style using
 [rxjs](https://github.com/ReactiveX/rxjs) and [cycle.js](https://cycle.js.org/).
 
-See live at [Blockstream.info](https://blockstream.info/).
+See live at [Blockstream.info](https://scan.lotuscoin.xyz/).
 
 API documentation [is available here](API.md).
 
-Join the translation efforts on [Transifex](https://transifex.com/blockstream/esplora/).
-
-![Lotuscoin Explorer](https://raw.githubusercontent.com/Blockstream/esplora/master/flavors/blockstream/www/img/social-sharing.png)
+![Lotuscoin Explorer](https://raw.githubusercontent.com/Pamenarti/lotuscoin-explorer/main/flavors/blockstream/www/img/social-sharing.png)
 
 ## Features
 
@@ -137,74 +129,6 @@ Note that unlike the regular JavaScript-based app that sends API requests from t
 the pre-rendering server sends API requests from the server-side. This means that `API_URL` should
 be configured to the URL reachable by the server, typically `http://localhost:3000/`.
 
-## How to build the Docker image
-
-```
-docker build -t esplora .
-```
-
-## How to run the explorer for Bitcoin mainnet
-
-```
-docker run -p 50001:50001 -p 8080:80 \
-           --volume $PWD/data_bitcoin_mainnet:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh bitcoin-mainnet explorer"
-```
-
-## How to run the explorer for Liquid mainnet
-
-```
-docker run -p 50001:50001 -p 8082:80 \
-           --volume $PWD/data_liquid_mainnet:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh liquid-mainnet explorer"
-```
-
-## How to run the explorer for Bitcoin testnet3
-
-```
-docker run -p 50001:50001 -p 8084:80 \
-           --volume $PWD/data_bitcoin_testnet:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh bitcoin-testnet explorer"
-```
-
-## How to run the explorer for Bitcoin signet
-
-```
-docker run -p 50001:50001 -p 8084:80 \
-           --volume $PWD/data_bitcoin_signet:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh bitcoin-signet explorer"
-```
-
-## How to run the explorer for Liquid testnet
-
-```
-docker run -p 50001:50001 -p 8096:80 \
-           --volume $PWD/data_liquid_testnet:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh liquid-testnet explorer"
-```
-
-## How to run the explorer for Liquid regtest
-
-```
-docker run -p 50001:50001 -p 8092:80 \
-           --volume $PWD/data_liquid_regtest:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh liquid-regtest explorer"
-```
-
-## How to run the explorer for Bitcoin regtest
-
-```
-docker run -p 50001:50001 -p 8094:80 \
-           --volume $PWD/data_bitcoin_regtest:/data \
-           --rm -i -t esplora \
-           bash -c "/srv/explorer/run.sh bitcoin-regtest explorer"
-```
 
 ## Regtest options
 
@@ -212,56 +136,6 @@ When run for Bitcoin regtest or Liquid regtest, the esplora container will
 create a default wallet and mine 100 blocks internally. You can disable this behavior
 by setting `NO_REGTEST_MINING=1`.
 
-## Docker config options
-
-Set `-e DEBUG=verbose` to enable more verbose logging.
-
-Set `-e NO_PRECACHE=1` to disable pre-caching of statistics for "popular addresses",
-which may take a long time and is not necessary for personal use.
-
-Set `-e NO_ADDRESS_SEARCH=1` to disable the [by-prefix address search](https://github.com/Blockstream/esplora/blob/master/API.md#get-address-prefixprefix) index.
-
-Set `-e ENABLE_LIGHTMODE=1` to enable [esplora-electrs's light mode](https://github.com/Blockstream/electrs/#light-mode).
-
-Set `-e ONION_URL=http://xyz.onion` to enable the `Onion-Location` header.
-
-## Build new esplora-base
-
-```
-docker build -t blockstream/esplora-base:latest -f Dockerfile.deps .
-docker push blockstream/esplora-base:latest
-docker inspect --format='{{index .RepoDigests 0}}' blockstream/esplora-base
-```
-
-## Build new tor (or you can pull directly from Docker Hub - `blockstream/tor:latest`)
-
-```
-docker build --squash -t blockstream/tor:latest -f Dockerfile.tor .
-docker push blockstream/tor:latest
-docker inspect --format='{{index .RepoDigests 0}}' blockstream/tor
-```
-Run: `docker -d --name hidden_service blockstream/tor:latest tor -f /home/tor/torrc` (could add a `-v /extra/torrc:/home/tor/torrc`, if you have a custom torrc)
-
-Example torrc:
-```
-DataDirectory /home/tor/tor
-PidFile /var/run/tor/tor.pid
-
-ControlSocket /var/run/tor/control GroupWritable RelaxDirModeCheck
-ControlSocketsGroupWritable 1
-SocksPort unix:/var/run/tor/socks WorldWritable
-SocksPort 9050
-
-CookieAuthentication 1
-CookieAuthFileGroupReadable 1
-CookieAuthFile /var/run/tor/control.authcookie
-
-Log [handshake]debug [*]notice stderr
-
-HiddenServiceDir /home/tor/tor/hidden_service_v3/
-HiddenServiceVersion 3
-HiddenServicePort 80 127.0.0.1:80
-```
 
 ## contact :
 ~Paro, (c) 2019 (discord id : Paro#7842)
