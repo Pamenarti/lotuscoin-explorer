@@ -5,7 +5,7 @@ Block explorer web interface based on the [Lotuscoin-electrs](https://github.com
 Written as a single-page app in a reactive and functional style using
 [rxjs](https://github.com/ReactiveX/rxjs) and [cycle.js](https://cycle.js.org/).
 
-See live at [Blockstream.info](https://scan.lotuscoin.xyz/).
+See live at [lotuscoin.xyz](https://scan.lotuscoin.xyz/).
 
 API documentation [is available here](API.md).
 

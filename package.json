@@ -1,5 +1,5 @@
 {
-  "name": "esplora",
+  "name": "Lotuscoin Explorer",
   "version": "0.1.0",
   "scripts": {
     "dev-server": "babel-node dev-server.js",
