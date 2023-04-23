@@ -17,7 +17,7 @@ API documentation [is available here](API.md).
 
 Join the translation efforts on [Transifex](https://transifex.com/blockstream/esplora/).
 
-![Esplora](https://raw.githubusercontent.com/Blockstream/esplora/master/flavors/blockstream/www/img/social-sharing.png)
+![Lotuscoin Explorer](https://raw.githubusercontent.com/Blockstream/esplora/master/flavors/blockstream/www/img/social-sharing.png)
 
 ## Features
 
@@ -48,9 +48,9 @@ Join the translation efforts on [Transifex](https://transifex.com/blockstream/es
 To start a development server with live babel/browserify transpilation, run:
 
 ```bash
-$ git clone https://github.com/Blockstream/esplora && cd esplora
+$ git clone https://github.com/Pamenarti/lotuscoin-explorer && cd esplora
 $ npm install
-$ export API_URL=http://localhost:3000/ # or https://blockstream.info/api/ if you don't have a local API server
+$ export API_URL=http://localhost:3000/ # or https://scan.lotuscoin.xyz/api/ if you don't have a local API server
 # (see more config options below)
 $ npm run dev-server
 ```
@@ -263,6 +263,28 @@ HiddenServiceVersion 3
 HiddenServicePort 80 127.0.0.1:80
 ```
 
-## License
+## contact :
+~Paro, (c) 2019 (discord id : Paro#7842)
 
-MIT
+
+## License
+(The MIT License)
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
