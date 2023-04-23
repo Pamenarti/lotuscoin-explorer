@@ -1,0 +1,4 @@
+{
+  "electrum.blockstream.info": { "tcp_port": 60001, "ssl_port": 60002 },
+  "explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion": { "tcp_port": 143 }
+}

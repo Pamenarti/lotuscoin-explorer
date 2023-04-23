@@ -1,0 +1,82 @@
+variables:
+  CI_DISPOSABLE_ENVIRONMENT: "true"
+  BULLSEYE_IMAGE: debian:bullseye@sha256:4d6ab716de467aad58e91b1b720f0badd7478847ec7a18f66027d0f8a329a43c
+  IMAGE_BASE: blockstream/esplora-base
+  IMAGE: blockstream/esplora
+  DOCKERHUB_ESPLORA_URL: "https://hub.docker.com/v2/repositories/blockstream/esplora/tags/"
+
+stages:
+  - build
+  - plan
+  - deploy
+
+default:
+  image: blockstream/gcloud-docker-tf:1.3.8
+  tags:
+    - cloud
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - unknown_failure
+      - stuck_or_timeout_failure
+
+include:
+  - gitlab/**.yaml
+
+## disables MR-triggered pipelines and allows only branch-triggered pipelines
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: never
+    - when: always
+
+plan_main:
+  extends: .tf_setup
+  stage: deploy
+  only:
+    - /^main_v.*/
+  script:
+    - (echo -n "$V3_PK" > terraform/modules/tor/v3.pk)
+    - (echo -n "$V3_PUBK" > terraform/modules/tor/v3.pubk)
+    - (cd terraform && terraform init -input=false &&
+      terraform workspace select main &&
+      terraform init -input=false &&
+      terraform plan
+      -var "prometheus_allowed_source_ip=$PROMETHEUS_ALLOWED_SOURCE_IP"
+      -var "hosts=$HOSTS"
+      -var "hosts_onion=$HOSTS_ONION"
+      -var "cluster_size=$NODE_CLUSTER_SIZE"
+      -var "preemptible_cluster_size=$NODE_PREEMPTIBLE_CLUSTER_SIZE"
+      -var "instance_type=$NODE_INSTANCE_TYPE"
+      -var "preemptible_instance_type=$NODE_PREEMPTIBLE_INSTANCE_TYPE"
+      -var "regions=$REGIONS"
+      -var "zones=$ZONES"
+      -var "ssl_certs=$SSL_CERTS"
+      -var "image_source_project=$IMAGE_SOURCE_PROJECT"
+      -input=false)
+
+deploy_main:
+  extends: .tf_setup
+  when: manual
+  only:
+    - /^main_v.*/
+  script:
+    - (echo -n "$V3_PK" > terraform/modules/tor/v3.pk)
+    - (echo -n "$V3_PUBK" > terraform/modules/tor/v3.pubk)
+    - (cd terraform && terraform init -input=false &&
+       terraform workspace select main &&
+       terraform init -input=false &&
+       terraform apply
+        -var "prometheus_allowed_source_ip=$PROMETHEUS_ALLOWED_SOURCE_IP"
+        -var "hosts=$HOSTS"
+        -var "hosts_onion=$HOSTS_ONION"
+        -var "cluster_size=$NODE_CLUSTER_SIZE"
+        -var "preemptible_cluster_size=$NODE_PREEMPTIBLE_CLUSTER_SIZE"
+        -var "instance_type=$NODE_INSTANCE_TYPE"
+        -var "preemptible_instance_type=$NODE_PREEMPTIBLE_INSTANCE_TYPE"
+        -var "regions=$REGIONS"
+        -var "zones=$ZONES"
+        -var "ssl_certs=$SSL_CERTS"
+        -var "image_source_project=$IMAGE_SOURCE_PROJECT"
+        -input=false -auto-approve)

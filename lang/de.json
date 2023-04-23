@@ -1,0 +1,40 @@
+{
+  "Address": "Adresse",
+  "Address: %s": "Adresse: %0",
+  "Block %s": "Block %0",
+  "Block #%s: %s": "Block #%0: %1",
+  "Height": "Höhe",
+  "In best chain (%s confirmations)": [
+    "In bester Chain (1 Bestätigung)",
+    "In bester Chain (%0 Bestätigungen)"
+  ],
+  "Included in Block": "Beinhaltet in Block",
+  "lang_id": "de",
+  "lang_name": "Deutsch",
+  "Loading...": "Wird geladen...",
+  "Load more": "Mehr laden",
+  "Next": "Nächster",
+  "No results found": "Keine Ergebnisse gefunden",
+  "Page Not Found": "Seite nicht gefunden",
+  "Previous": "Vorheriger",
+  "%s Confirmations": [
+    "1 Bestätigung",
+    "%0 Bestätigungen"
+  ],
+  "Search for block height, hash, transaction, or address": "Suche nach Blockhöhe, Hash, Transaktion oder Adresse",
+  "Size (KB)": "Grösse (KB)",
+  "%s of %s Transactions": "%0 von %1 Transaktionen",
+  "Spent by": "Ausgegeben von",
+  "%s Transactions": [
+    "%0 Transaktionen",
+    "%0 Transaktionen"
+  ],
+  "Timestamp": "Zeitstempel",
+  "Transaction": "Transaktion",
+  "Transaction fees": "Gebühr",
+  "Transactions": "Transaktionen",
+  "Transaction: %s": "Transaktion: %0",
+  "Unconfirmed": "Unbestätigt",
+  "Unspent": "Nicht ausgegeben",
+  "Weight (KWU)": "Gewicht (KWU)"
+}

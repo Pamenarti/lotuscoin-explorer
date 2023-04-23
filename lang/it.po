@@ -1,0 +1,491 @@
+# Translators:
+# Nadav Ivgi <nadav+transifex1@shesek.info>, 2019
+# Domenico Gabriele <domenico@blockstream.com>, 2019
+# Alessandro Saglimbeni <alessandro@blockstream.io>, 2019
+# 
+msgid ""
+msgstr ""
+"Last-Translator: Alessandro Saglimbeni <alessandro@blockstream.io>, 2019\n"
+"Language-Team: Italian (https://www.transifex.com/blockstream/teams/92972/it/)\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Address"
+msgstr "Indirizzo"
+
+msgid "Address reuse"
+msgstr ""
+
+msgid "Address: %s"
+msgstr "Indirizzo: %0"
+
+msgid "Amount commitment"
+msgstr "Commitment dell'Importo"
+
+msgid "API"
+msgstr "API"
+
+msgid "Asset commitment"
+msgstr "Commitment dell'Asset"
+
+msgid "Asset ID"
+msgstr "Asset ID"
+
+msgid "Bits"
+msgstr "Bits"
+
+msgid "Block Challenge"
+msgstr "Challenge del Blocco"
+
+msgid "Block height"
+msgstr "Altezza del Blocco"
+
+msgid "Block not found"
+msgstr "Blocco Non Trovato"
+
+msgid "Block %s"
+msgstr "Blocco %0"
+
+msgid "Block Solution"
+msgstr "Soluzione del Blocco"
+
+msgid "Block #%s: %s"
+msgstr "Blocco #%0: %1"
+
+msgid "Block timestamp"
+msgstr "Timestamp del Blocco"
+
+msgid "Broadcast raw transaction (hex)"
+msgstr "Trasmetti una Raw Transaction (hex)"
+
+msgid "Broadcast transaction"
+msgstr "Trasmetti transazione"
+
+msgid "Broadcast tx"
+msgstr "Trasmetti TX"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Coinbase"
+msgstr "Coinbase"
+
+msgid ""
+"CoinJoin transactions hide the link between inputs and outputs and improves "
+"Bitcoin's overall privacy and fungibility for everyone."
+msgstr ""
+
+msgid ""
+"compared to bitcoind's suggested fee of %s sat/vB for confirmation within 2 "
+"blocks"
+msgstr ""
+
+msgid "Confidential"
+msgstr "Confidenziale"
+
+msgid "Confirmed"
+msgstr "Confermata"
+
+msgid "Confirmed received"
+msgstr "Output confermati ricevuti"
+
+msgid "Confirmed spent"
+msgstr "Output confermati spesi"
+
+msgid "Confirmed tx count"
+msgstr "Numero di transazioni confermate"
+
+msgid "Confirmed unspent"
+msgstr "Output confermati non spesi"
+
+msgid "Currently unavailable"
+msgstr ""
+
+msgid "Details"
+msgstr "Dettagli"
+
+msgid "Esplora is currently unavailable, please try again later."
+msgstr ""
+
+msgid "ETA"
+msgstr ""
+
+msgid "Fee"
+msgstr ""
+
+msgid "Go"
+msgstr "Vai"
+
+msgid "Height"
+msgstr "Altezza"
+
+msgid "In best chain"
+msgstr ""
+
+msgid "In best chain (%s confirmations) (singular)"
+msgstr "Nella migliore catena (1 conferma)"
+
+msgid "In best chain (%s confirmations) (plural)"
+msgstr "Nella migliore catena (%0 conferme)"
+
+msgid "Included in Block"
+msgstr "Inclusa in Blocco"
+
+msgid "in %s blocks (%s from tip)"
+msgstr ""
+
+msgid "Issuance"
+msgstr "Emissione"
+
+msgid "Issuance amount"
+msgstr ""
+
+msgid "Issuance blinding nonce"
+msgstr "Blinding nonce di emissione"
+
+msgid "Issuance entropy"
+msgstr "Entropia di emissione"
+
+msgid ""
+"It is possible to tell the change output apart because you're sending to a "
+"different script type than the one you're spending from."
+msgstr ""
+
+msgid "lang_id"
+msgstr "it"
+
+msgid "lang_name"
+msgstr "Italiano"
+
+msgid "Likely self-transfer"
+msgstr ""
+
+msgid "Loading..."
+msgstr "Caricamento in corso..."
+
+msgid "Load more"
+msgstr "Continua"
+
+msgid "Lock time"
+msgstr "Lock time"
+
+msgid "ltr"
+msgstr ""
+
+msgid "Mempool"
+msgstr ""
+
+msgid "Merkle root"
+msgstr "Merkle root"
+
+msgid "New asset"
+msgstr "Nuovo Asset"
+
+msgid "Newer"
+msgstr "Più recente"
+
+msgid "Next"
+msgstr "Prossimo"
+
+msgid "Nonce"
+msgstr "Nonce"
+
+msgid "Nonstandard"
+msgstr "Nonstandard"
+
+msgid "No outputs"
+msgstr "Nessun Output"
+
+msgid "No recent transactions"
+msgstr ""
+
+msgid "No reissuance"
+msgstr "Nessuna Riemissione"
+
+msgid "No results found"
+msgstr "Nessun risultato trovato"
+
+msgid "nSequence"
+msgstr "nSequence"
+
+msgid "Older"
+msgstr "Più vecchio"
+
+msgid "OP_RETURN data"
+msgstr "Dati di OP_RETURN"
+
+msgid "Opted in"
+msgstr "Opted in"
+
+msgid "Orphaned"
+msgstr "Orfano"
+
+msgid "Outpoint"
+msgstr "Outpoint"
+
+msgid "Output in parent chain"
+msgstr "Output nella catena padre"
+
+msgid "overpaying by %s%"
+msgstr ""
+
+msgid "Page Not Found"
+msgstr "Pagina Non Trovata"
+
+msgid "Peg-out"
+msgstr "Peg-out"
+
+msgid "Peg-out address"
+msgstr "Indirizzo di peg-out"
+
+msgid "Peg-out ASM"
+msgstr "Peg-out ASM"
+
+msgid "Peg-out to"
+msgstr "Peg-out verso"
+
+msgid "Possibly a CoinJoin transaction"
+msgstr ""
+
+msgid "Powered by esplora"
+msgstr "Powered by esplora"
+
+msgid "Prev"
+msgstr "Precedente"
+
+msgid "Previous"
+msgstr "Precedente"
+
+msgid "Previous output address"
+msgstr "Indirizzo dell'output precedente"
+
+msgid "Previous output script"
+msgstr "Script dell'output precedente"
+
+msgid "Privacy analysis"
+msgstr ""
+
+msgid "(RBF)"
+msgstr "(RBF)"
+
+msgid "Recent transactions"
+msgstr ""
+
+msgid "Reissuance"
+msgstr "Riemissione"
+
+msgid "Reissuance commitment"
+msgstr "Commitment di riemissione"
+
+msgid "Reissuance keys"
+msgstr "Chiavi di riemissione"
+
+msgid "Replace by fee"
+msgstr "Replace by fee "
+
+msgid "Round payment amount"
+msgstr ""
+
+msgid "sat/vbyte"
+msgstr ""
+
+msgid "%s blocks"
+msgstr ""
+
+msgid "Scan QR"
+msgstr "Scansiona QR"
+
+msgid "%s Confirmations (singular)"
+msgstr "1 Conferma"
+
+msgid "%s Confirmations (plural)"
+msgstr "%0 Conferme"
+
+msgid "scriptPubKey (asm)"
+msgstr "scriptPubKey (asm)"
+
+msgid "scriptPubKey (hex)"
+msgstr "scriptPubKey (hex)"
+
+msgid "scriptSig (asm)"
+msgstr "scriptSig (asm)"
+
+msgid "scriptSig (hex)"
+msgstr "scriptSig (hex)"
+
+msgid "Search for block height, hash, transaction, or address"
+msgstr "Cerca per altezza blocco, hash, transazione o indirizzo"
+
+msgid "SegWit fee savings"
+msgstr ""
+
+msgid ""
+"Sending exact amounts (with no change) is an indication the bitcoins likely "
+"didn't change hands."
+msgstr ""
+
+msgid "Sending to a different script type"
+msgstr ""
+
+msgid "%s from tip"
+msgstr ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Size (KB)"
+msgstr "Dimensione (KB)"
+
+msgid "%s of %s Transactions"
+msgstr "%0 di %1 Transazioni"
+
+msgid "%s outputs (singular)"
+msgstr "1 output"
+
+msgid "%s outputs (plural)"
+msgstr "%0 outputs"
+
+msgid "Spending tx"
+msgstr "Speso nella transazione"
+
+msgid "Spent by"
+msgstr "Spesa da"
+
+msgid "%s (%s sat/vB)"
+msgstr "%s (%s sat/vB)"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "%s Transactions (singular)"
+msgstr "%0 Transazioni"
+
+msgid "%s Transactions (plural)"
+msgstr "%0 Transazioni"
+
+msgid "style.css"
+msgstr "style.css"
+
+msgid ""
+"There's an indication that one output is more likely to be the change "
+"because some inputs would've been unnecessary if it was the payment."
+msgstr ""
+
+msgid ""
+"This transaction could save %s on fees by upgrading to native SegWit-Bech32 "
+"or %s by upgrading to SegWit-P2SH"
+msgstr ""
+
+msgid ""
+"This transaction doesn't violate any of the privacy gotchas we cover. Read "
+"on other potential ways it might leak privacy."
+msgstr ""
+
+msgid ""
+"This transaction has unnecessary inputs that are not typically added by "
+"wallet software."
+msgstr ""
+
+msgid ""
+"This transaction re-uses addresses. This makes it trivial to track your "
+"transactions over time and link them together. Note that we currently only "
+"look for address reuse within the transaction, not across the history."
+msgstr ""
+
+msgid "This transaction saved %s on fees by upgrading to native SegWit-Bech32"
+msgstr ""
+
+msgid ""
+"This transaction saved %s on fees by upgrading to SegWit and could save %s "
+"more by fully upgrading to native SegWit-Bech32"
+msgstr ""
+
+msgid "Timestamp"
+msgstr "Data"
+
+msgid "Total fees"
+msgstr ""
+
+msgid "Total size"
+msgstr ""
+
+msgid "Total transactions"
+msgstr ""
+
+msgid "Total tx count"
+msgstr "Numero di transazioni totali"
+
+msgid "Total unspent"
+msgstr "Totale output non spesi"
+
+msgid "Transaction"
+msgstr "Transazione"
+
+msgid "Transaction fees"
+msgstr "Commissione transazione"
+
+msgid "Transaction not found"
+msgstr "Transazione non trovata"
+
+msgid "Transactions"
+msgstr "Transazioni"
+
+msgid "Transaction: %s"
+msgstr "Transazione: %0"
+
+msgid "TXID"
+msgstr ""
+
+msgid "txid:vout"
+msgstr "txid:vout"
+
+msgid "Type"
+msgstr "Tipologia"
+
+msgid "Unconfirmed"
+msgstr "Non confermata"
+
+msgid "Unconfirmed received"
+msgstr "Output non confermeti ricevuti"
+
+msgid "Unconfirmed spent"
+msgstr "Output non confermati spesi"
+
+msgid "Unconfirmed tx count"
+msgstr "Numero transazioni non confermate"
+
+msgid "Unnecessary input heuristic"
+msgstr ""
+
+msgid "Unspent"
+msgstr "Non spesa"
+
+msgid ""
+"Using round payment amounts gives an indication of which output is the "
+"payment and which is the change. Padding payment amounts to use all "
+"available precision resolves this issue."
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "Value commitment"
+msgstr "Commitment dell'importo"
+
+msgid "Version"
+msgstr "Versione"
+
+msgid "Virtual size"
+msgstr ""
+
+msgid "We encountered an error. Please try again later."
+msgstr "C'è stato un problema. Per piacere riprova più tardi."
+
+msgid "Weight (KWU)"
+msgstr "Peso (KWU)"
+
+msgid "Weight units"
+msgstr ""
+
+msgid "Witness"
+msgstr "Witness"

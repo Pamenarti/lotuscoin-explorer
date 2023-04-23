@@ -1,0 +1,38 @@
+{
+  "Address": "Adres",
+  "Address: %s": "Adres: %0",
+  "Block %s": "Blokken %0",
+  "Block #%s: %s": "Blok #%0: %1",
+  "Confidential": "Vertrouwelijk",
+  "Height": "Hoogte",
+  "In best chain (%s confirmations)": [
+    "In de beste keten (1 bevestigd)",
+    "In de beste keten (%0 bevestigd)"
+  ],
+  "Included in Block": "Bevind zich in Blok",
+  "lang_id": "nl",
+  "lang_name": "Nederlands",
+  "Loading...": "Bezig met laden...",
+  "Load more": "Meer laden",
+  "Next": "Volgende",
+  "No results found": "Geen Resultaten Gevonden",
+  "Page Not Found": "Pagina Niet Gevonden",
+  "Previous": "Vorige",
+  "%s Confirmations": [
+    "1 Bevestiging",
+    "%0 Bevestigd"
+  ],
+  "Search for block height, hash, transaction, or address": "Zoek naar blokhoogte, hash, transactie of adres",
+  "Size (KB)": "Grootte (KB)",
+  "%s of %s Transactions": "%0 van %1 Transacties",
+  "%s Transactions": [
+    "%0 Transacties",
+    "%0 Transacties"
+  ],
+  "Transaction": "Transacties",
+  "Transaction fees": "Kosten",
+  "Transactions": "Transacties",
+  "Transaction: %s": "Transactie: %0",
+  "Unconfirmed": "Niet Bevestigd",
+  "Version": "Versie"
+}

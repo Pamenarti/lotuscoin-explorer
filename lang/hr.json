@@ -1,0 +1,43 @@
+{
+  "Address": "Adresa",
+  "Address: %s": "Adresa: %0",
+  "Block %s": "blok %0",
+  "Block #%s: %s": "Blok #%0: %1",
+  "Confidential": "Poverljivo",
+  "Details": "Detalji",
+  "Height": "Visina",
+  "In best chain (%s confirmations)": [
+    "U najnoljem lancu (1 conferma)",
+    "U najnoljem lancu (%0 conferme)"
+  ],
+  "Included in Block": "Ukljuceno u blok",
+  "lang_id": "hr",
+  "lang_name": "Hrvatski",
+  "Loading...": "Ucitavanje...",
+  "Load more": "Ucitaj jos",
+  "Next": "Sledece",
+  "No results found": "Nema rezultata",
+  "Page Not Found": "Strana nije pronadjena",
+  "Previous": "Prethodni",
+  "%s Confirmations": [
+    "1 Potvrda",
+    "%0 Potvrda"
+  ],
+  "Search for block height, hash, transaction, or address": "Pretraga po visini bloka, hash, transakciji ili adresi",
+  "Size (KB)": "Velicina (KB)",
+  "%s of %s Transactions": "%0 od %1 Transakicja",
+  "Spent by": "Potroseni od strane",
+  "%s Transactions": [
+    "%0 Transakcija",
+    "%0 Transakcija"
+  ],
+  "Timestamp": "Vreme",
+  "Transaction": "Transakcija",
+  "Transactions": "Transakcije",
+  "Transaction: %s": "Transakcija: %0",
+  "Type": "Tip",
+  "Unconfirmed": "Nema Potvrda",
+  "Unspent": "Nepotroseni",
+  "Version": "Verzija",
+  "Weight (KWU)": "Tezina (KWU)"
+}

@@ -1,0 +1,43 @@
+{
+  "Address": "Adress",
+  "Address: %s": "Adress: %0",
+  "Block %s": "Block %0",
+  "Block #%s: %s": "Böpcl #%0: %1",
+  "Confidential": "Konfidentiell",
+  "Details": "Detaljer",
+  "Height": "Höjd",
+  "In best chain (%s confirmations)": [
+    "I bästa kedjan (1 bekräftelse)",
+    "I bästa kedjan (%0 bekräftelse"
+  ],
+  "Included in Block": "Inkluderad i block",
+  "lang_id": "sv",
+  "lang_name": "Svenska",
+  "Loading...": "Laddar...",
+  "Load more": "Ladda fler",
+  "Next": "Nästa",
+  "No results found": "Inga resultat hittade",
+  "Page Not Found": "Sida inte hittad",
+  "Previous": "Föregående",
+  "%s Confirmations": [
+    "1 bekräftelse",
+    "%0 bekräftelser"
+  ],
+  "Search for block height, hash, transaction, or address": "Sök efter blockhöjd, hash, transaktion eller adress",
+  "Size (KB)": "Storlek (KB)",
+  "%s of %s Transactions": "%0 av %1 transaktioner",
+  "Spent by": "Spenderat av",
+  "%s Transactions": [
+    "%0 transaktioner",
+    "%0 transaktioner"
+  ],
+  "Timestamp": "Tidpunkt",
+  "Transaction": "Transaktion",
+  "Transaction fees": "Miningavgift",
+  "Transactions": "Transaktioner",
+  "Transaction: %s": "Transaktion: %0",
+  "Type": "Typ",
+  "Unconfirmed": "Obekräftad",
+  "Unspent": "Ospenderad",
+  "Weight (KWU)": "Vikt (KWU)"
+}

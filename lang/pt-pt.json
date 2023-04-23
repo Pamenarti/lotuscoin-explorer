@@ -1,0 +1,44 @@
+{
+  "Address": "Endereço",
+  "Address: %s": "Endereço: %0",
+  "Block %s": "Bloco %0",
+  "Block #%s: %s": "Bloco #%0: %1",
+  "Confidential": "Confidencial",
+  "Details": "Detalhes",
+  "Height": "Altura",
+  "In best chain (%s confirmations)": [
+    "Na melhor cadeia (1 Confirmação)",
+    "Na melhor cadeia (%0 confirmações)"
+  ],
+  "Included in Block": "Incluída no Bloco",
+  "lang_id": "pt-pt",
+  "lang_name": "Português",
+  "Loading...": "Carregando...",
+  "Load more": "Mais",
+  "Next": "Próximo",
+  "No results found": "Nenhum resultado encontrado",
+  "Page Not Found": "Página Não Encontrada",
+  "Previous": "Anterior",
+  "%s Confirmations": [
+    "1 Confirmação",
+    "%0 Confirmações"
+  ],
+  "Search for block height, hash, transaction, or address": "Pesquise por altura do bloco, hash, transação ou endereço",
+  "Size (KB)": "Tamanho (KB)",
+  "%s of %s Transactions": "%0 de %1 Confirmações",
+  "Spent by": "Gasto por",
+  "%s Transactions": [
+    "%0 Transações",
+    "%0 Transações"
+  ],
+  "Timestamp": "Registo de data/hora",
+  "Transaction": "Transação",
+  "Transaction fees": "Taxas de transação",
+  "Transactions": "Transações",
+  "Transaction: %s": "Transação: %0",
+  "Type": "Tipo",
+  "Unconfirmed": "Não confirmada",
+  "Unspent": "Não gasto",
+  "Version": "Versão",
+  "Weight (KWU)": "Peso (KWU)"
+}
