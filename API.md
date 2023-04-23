@@ -1,19 +1,19 @@
-# Esplora HTTP API
+# Lotuscoin HTTP API
 
 JSON over RESTful HTTP. Amounts are always represented in satoshis.
 
 The blockstream.info public APIs are available at:
-- Bitcoin: https://blockstream.info/api/
-- Bitcoin Testnet: https://blockstream.info/testnet/api/
-- Liquid: https://blockstream.info/liquid/api/
-- Liquid Testnet: https://blockstream.info/liquidtestnet/api/
+- Lotuscoin: https://scan.lotuscoin.xyz/api/
+- Lotuscoin Testnet: https://scan.lotuscoin.xyz/testnet/api/
+- Liquid: https://scan.lotuscoin.xyz/liquid/api/
+- Liquid Testnet: https://scan.lotuscoin.xyz/liquidtestnet/api/
 
 For example:
 ```bash
-$ curl https://blockstream.info/api/blocks/tip/hash
+$ curl https://scan.lotuscoin.xyz/api/blocks/tip/hash
 ```
 
-You can also [self-host the Esplora API server](https://github.com/Blockstream/esplora#how-to-run-the-explorer-for-bitcoin-mainnet), which provides better privacy and security.
+You can also [self-host the Esplora API server](https://github.com/Pamenarti/lotuscoin-explorer#how-to-run-the-explorer-for-bitcoin-mainnet), which provides better privacy and security.
 
 ## Transactions
 
