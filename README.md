@@ -9,7 +9,7 @@ See live at [lotuscoin.xyz](https://scan.lotuscoin.xyz/).
 
 API documentation [is available here](API.md).
 
-![Lotuscoin Explorer](https://raw.githubusercontent.com/Pamenarti/lotuscoin-explorer/main/flavors/blockstream/www/img/social-sharing.png)
+
 
 ## Features
 
